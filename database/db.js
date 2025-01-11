@@ -5,7 +5,7 @@ import 'dotenv/config';
 
 const connectToMongo = async () => {
     try {
-        await connect(process.env.MONGO_URI);
+        await connect(`mongodb+srv://gaurav:8269301490@cluster0.tddya.mongodb.net/`);
         console.log("*** Database coonected Successfully ***");
     } catch (error) {
         console.log(error)
